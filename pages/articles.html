@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMate | Articles</title>
+    <title>Articles & Tips | MindMate</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/articles.css">
 </head>
 <body>
-    
+
+    <main class="articles-container">
+
+        <a href="../index.html" class="back-link">
+            ← Kembali ke Dashboard
+        </a>
+
+        <!-- HEADER -->
+        <header class="articles-header">
+            <div>
+                <p class="section-label">KNOWLEDGE & WELL-BEING</p>
+                <h1>Articles & Tips</h1>
+                <p>
+                    Temukan wawasan dan langkah sederhana untuk
+                    menjaga keseimbangan kesehatan mental dan akademikmu.
+                </p>
+            </div>
+        </header>
+
+        <!-- FEATURED ARTICLE -->
+        <section class="featured-article" id="featuredArticle">
+            <div class="featured-content">
+                <span class="featured-tag">FEATURED ARTICLE</span>
+                <h2>Memahami Burnout Akademik pada Mahasiswa</h2>
+                <p>
+                    Mengenali tanda-tanda kelelahan akademik dan memahami
+                    pentingnya menjaga keseimbangan antara belajar dan istirahat.
+                </p>
+
+                <button class="read-button" onclick="openArticle(1)">
+                    Baca Artikel →
+                </button>
+            </div>
+
+            <div class="featured-illustration">
+                <span>☁</span>
+                <span>♡</span>
+            </div>
+        </section>
+
+        <!-- SEARCH -->
+        <section class="article-search">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari artikel atau topik..."
+            >
+        </section>
+
+        <!-- CATEGORY -->
+        <section class="category-section">
+            <div class="category-list">
+                <button class="category-btn active" data-category="Semua">
+                    Semua
+                </button>
+
+                <button class="category-btn" data-category="Mental Health">
+                    Mental Health
+                </button>
+
+                <button class="category-btn" data-category="Academic Life">
+                    Academic Life
+                </button>
+
+                <button class="category-btn" data-category="Self Care">
+                    Self Care
+                </button>
+
+                <button class="category-btn" data-category="Productivity">
+                    Productivity
+                </button>
+            </div>
+        </section>
+
+        <!-- ARTICLE LIST -->
+        <section class="article-section">
+            <div class="article-heading">
+                <div>
+                    <p class="section-label">EXPLORE CONTENT</p>
+                    <h2>Artikel untukmu</h2>
+                </div>
+
+                <span id="articleCount">0 Artikel</span>
+            </div>
+
+            <div class="article-grid" id="articleGrid"></div>
+
+            <p class="no-result" id="noResult" hidden>
+                Artikel tidak ditemukan.
+            </p>
+        </section>
+
+        <!-- ARTICLE DETAIL -->
+        <section class="article-detail" id="articleDetail" hidden>
+            <button class="detail-back" onclick="closeArticle()">
+                ← Kembali ke Artikel
+            </button>
+
+            <div id="articleDetailContent"></div>
+        </section>
+
+        <footer class="articles-footer">
+            <p>
+                Informasi dalam MindMate ditujukan untuk edukasi dan refleksi,
+                bukan pengganti diagnosis atau konsultasi profesional.
+            </p>
+        </footer>
+
+    </main>
+
+    <script src="../js/articles.js"></script>
 </body>
 </html>

@@ -1,11 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMate | Mood Tracker</title>
+
+    <title>Mood Tracker | MindMate</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/mood-tracker.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+
+    <div class="mood-page">
+
+        <header class="mood-header">
+
+            <a href="../index.html" class="brand">
+                <span class="brand-mark">m</span>
+                Mind<span class="brand-light">Mate</span>
+            </a>
+
+            <a href="../index.html" class="back-link">
+                ← Kembali ke Dashboard
+            </a>
+
+        </header>
+
+
+        <main class="mood-container">
+
+            <section class="mood-intro">
+
+                <span class="section-label">MOOD TRACKER</span>
+
+                <h1>Bagaimana perasaanmu <span>hari ini?</span></h1>
+
+                <p>
+                    Luangkan waktu sejenak untuk mengenali perasaanmu.
+                    Setiap emosi layak untuk dipahami.
+                </p>
+
+            </section>
+
+
+            <!-- MOOD CHECK-IN -->
+            <section class="mood-checkin">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Daily Check-in</h2>
+                        <p>Pilih suasana hati yang paling menggambarkan dirimu.</p>
+                    </div>
+
+                    <span class="mood-date" id="currentDate">
+                        Hari ini
+                    </span>
+                </div>
+
+
+                <div class="mood-options">
+
+                    <button type="button" data-mood="Senang">
+                        <span>😊</span>
+                        <small>Senang</small>
+                    </button>
+
+                    <button type="button" data-mood="Tenang">
+                        <span>😌</span>
+                        <small>Tenang</small>
+                    </button>
+
+                    <button type="button" data-mood="Biasa">
+                        <span>😐</span>
+                        <small>Biasa</small>
+                    </button>
+
+                    <button type="button" data-mood="Lelah">
+                        <span>😴</span>
+                        <small>Lelah</small>
+                    </button>
+
+                    <button type="button" data-mood="Cemas">
+                        <span>😟</span>
+                        <small>Cemas</small>
+                    </button>
+
+                    <button type="button" data-mood="Sedih">
+                        <span>😢</span>
+                        <small>Sedih</small>
+                    </button>
+
+                </div>
+
+
+                <!-- MOOD NOTE -->
+                <div class="mood-note">
+
+                    <label for="moodNote">
+                        Apa yang sedang kamu rasakan?
+                    </label>
+
+                    <p>
+                        Tuliskan sedikit cerita tentang harimu.
+                        Tidak perlu panjang, cukup apa yang ingin kamu ungkapkan.
+                    </p>
+
+                    <textarea
+                        id="moodNote"
+                        placeholder="Hari ini aku merasa..."
+                        rows="4"
+                    ></textarea>
+
+                    <button type="button" id="saveMoodBtn" class="button button-dark">
+                        Simpan Mood →
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- MOOD HISTORY -->
+            <section class="mood-history">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Riwayat Mood</h2>
+                        <p>Perjalanan emosionalmu dari hari ke hari.</p>
+                    </div>
+                </div>
+
+                <div id="moodHistoryList" class="mood-history-list">
+
+                    <div class="empty-history">
+                        <span>🌱</span>
+                        <h3>Belum ada riwayat mood</h3>
+                        <p>
+                            Mulai catat suasana hatimu hari ini.
+                            Setiap langkah kecil adalah bagian dari perjalananmu.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- REMINDER -->
+            <section class="mood-reminder">
+
+                <span>♡</span>
+
+                <div>
+                    <h3>Ingat, tidak apa-apa untuk tidak selalu baik-baik saja.</h3>
+
+                    <p>
+                        Mengenali perasaan adalah salah satu cara untuk
+                        memahami diri sendiri.
+                    </p>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="../js/mood-tracker.js"></script>
+
 </body>
 </html>

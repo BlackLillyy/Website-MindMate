@@ -1,11 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMate | Journey</title>
+    <title>Mental Health Journey | MindMate</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/journey.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    
+
+    <main class="journey-container">
+
+        <a href="../index.html" class="back-link">← Kembali ke Dashboard</a>
+
+        <header class="journey-header">
+            <div>
+                <p class="section-label">YOUR PERSONAL JOURNEY</p>
+                <h1>Mental Health Journey</h1>
+                <p class="journey-description">
+                    Lihat kembali perjalanan suasana hati dan aktivitas akademikmu.
+                    Setiap catatan adalah bagian dari proses mengenal diri sendiri.
+                </p>
+            </div>
+
+            <div class="journey-period">
+                <span>Periode laporan</span>
+                <strong id="reportPeriod">7 hari terakhir</strong>
+            </div>
+        </header>
+
+        <!-- SUMMARY -->
+        <section class="journey-summary">
+
+            <div class="summary-card">
+                <div class="summary-icon mood-icon">♡</div>
+                <p>Total Catatan Mood</p>
+                <h2 id="totalMood">0</h2>
+                <span>Catatan dalam 7 hari</span>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-icon task-icon">✓</div>
+                <p>Tugas Selesai</p>
+                <h2 id="completedTasks">0</h2>
+                <span>Dari seluruh tugas</span>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-icon pending-icon">◷</div>
+                <p>Tugas Belum Selesai</p>
+                <h2 id="pendingTasks">0</h2>
+                <span>Masih perlu dikerjakan</span>
+            </div>
+
+        </section>
+
+        <!-- MOOD CHART -->
+        <section class="journey-card">
+            <div class="card-heading">
+                <div>
+                    <p class="section-label">MOOD OVERVIEW</p>
+                    <h2>Perjalanan Suasana Hati</h2>
+                    <p>Perubahan mood yang kamu catat selama 7 hari terakhir.</p>
+                </div>
+            </div>
+
+            <div class="chart-wrapper">
+                <canvas id="moodJourneyChart"></canvas>
+            </div>
+        </section>
+
+        <!-- MOOD DISTRIBUTION -->
+        <section class="journey-grid">
+
+            <div class="journey-card">
+                <p class="section-label">MOOD DISTRIBUTION</p>
+                <h2>Distribusi Mood</h2>
+                <p class="card-description">
+                    Berikut suasana hati yang paling sering kamu catat.
+                </p>
+
+                <div class="distribution-list" id="moodDistribution">
+                    <p class="empty-message">Belum ada catatan mood.</p>
+                </div>
+            </div>
+
+            <div class="journey-card">
+                <p class="section-label">WEEKLY REFLECTION</p>
+                <h2>Refleksi Mingguan</h2>
+
+                <div class="reflection-content">
+                    <div class="reflection-icon">✧</div>
+                    <h3 id="reflectionTitle">Mulai perjalananmu</h3>
+                    <p id="reflectionText">
+                        Catat suasana hatimu secara rutin untuk melihat
+                        perkembangan perjalananmu dari waktu ke waktu.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- TASK PROGRESS -->
+        <section class="journey-card">
+            <p class="section-label">ACADEMIC PROGRESS</p>
+            <h2>Progres Akademik</h2>
+            <p class="card-description">
+                Ringkasan penyelesaian tugas yang tercatat di Academic Workload.
+            </p>
+
+            <div class="task-progress">
+                <div class="progress-info">
+                    <span>Penyelesaian Tugas</span>
+                    <strong id="taskPercentage">0%</strong>
+                </div>
+
+                <div class="progress-track">
+                    <div class="progress-fill" id="taskProgressBar"></div>
+                </div>
+
+                <div class="task-progress-detail">
+                    <span id="completedDetail">0 tugas selesai</span>
+                    <span id="pendingDetail">0 belum selesai</span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="journey-footer">
+            <p>
+                MindMate membantu kamu merefleksikan suasana hati dan aktivitas
+                akademik. Data ini bukan alat diagnosis kesehatan mental.
+            </p>
+        </footer>
+
+    </main>
+
+    <script src="../js/journey.js"></script>
 </body>
 </html>

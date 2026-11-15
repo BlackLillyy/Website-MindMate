@@ -1,0 +1,304 @@
+/* STRESS RADAR PAGE */
+
+.radar-page {
+    min-height: 100vh;
+    padding: 25px;
+    background: #FAF9FC;
+    color: #29263B;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.radar-header {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radar-container {
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+/* INTRO */
+
+.radar-intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-label {
+    display: inline-block;
+    color: #8E7BD4;
+    background: #F0EDFA;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.radar-intro h1 {
+    font-size: 28px;
+    margin: 15px 0 10px;
+}
+
+.radar-intro h1 span {
+    color: #8E7BD4;
+}
+
+.radar-intro p {
+    color: #89869B;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* OVERVIEW */
+
+.radar-overview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.overview-card {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    background: white;
+    border: 1px solid #EFEDF4;
+    border-radius: 13px;
+    padding: 20px;
+}
+
+.overview-card > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #F0EDFA;
+    color: #8E7BD4;
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+.overview-card small {
+    font-size: 10px;
+    color: #89869B;
+}
+
+.overview-card h2 {
+    font-size: 22px;
+    margin: 5px 0 0;
+}
+
+/* GENERAL CARD */
+
+.radar-chart-card,
+.indicator-section {
+    background: white;
+    border: 1px solid #EFEDF4;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    font-size: 16px;
+    margin: 0 0 6px;
+}
+
+.section-heading p {
+    color: #9692A5;
+    font-size: 11px;
+    margin: 0;
+}
+
+.chart-label {
+    font-size: 9px;
+    color: #8E7BD4;
+    background: #F0EDFA;
+    padding: 7px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+/* CHART */
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    height: 350px;
+    margin: auto;
+}
+
+.chart-caption {
+    text-align: center;
+    color: #AAA6B7;
+    font-size: 9px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+/* INSIGHT */
+
+.insight-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+    padding: 23px;
+    background: #F0EDFA;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.insight-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: #8E7BD4;
+    border-radius: 11px;
+    font-size: 20px;
+}
+
+.insight-card h2 {
+    font-size: 15px;
+    margin: 12px 0 8px;
+}
+
+.insight-card p {
+    color: #777488;
+    font-size: 11px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* INDICATOR */
+
+.indicator-list {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.indicator-item {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.indicator-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+.indicator-info span:first-child {
+    font-weight: 600;
+}
+
+.indicator-info span:last-child {
+    color: #8E7BD4;
+    font-weight: 700;
+}
+
+.indicator-track {
+    width: 100%;
+    height: 8px;
+    background: #F0EDFA;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.indicator-progress {
+    height: 100%;
+    background: #8E7BD4;
+    border-radius: 20px;
+    transition: width .4s ease;
+}
+
+/* REMINDER */
+
+.radar-reminder {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #EFEDF4;
+    border-radius: 14px;
+    margin-top: 25px;
+}
+
+.radar-reminder > span {
+    font-size: 25px;
+    color: #8E7BD4;
+}
+
+.radar-reminder h3 {
+    font-size: 12px;
+    margin: 0 0 7px;
+}
+
+.radar-reminder p {
+    font-size: 10px;
+    color: #89869B;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .radar-page {
+        padding: 18px;
+    }
+
+    .radar-container {
+        margin: 40px auto;
+    }
+
+    .radar-intro h1 {
+        font-size: 22px;
+    }
+
+    .radar-overview {
+        grid-template-columns: 1fr;
+    }
+
+    .radar-chart-card,
+    .indicator-section {
+        padding: 18px;
+    }
+
+    .chart-container {
+        height: 280px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .insight-card {
+        padding: 18px;
+    }
+}

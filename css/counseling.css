@@ -1,0 +1,403 @@
+.counseling-container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #77718F;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.back-link:hover {
+    color: #8E7BD4;
+}
+
+.counseling-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F0EDFA;
+    padding: 35px;
+    border-radius: 22px;
+    margin-bottom: 25px;
+}
+
+.counseling-header h1 {
+    color: #29263B;
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.counseling-header p:last-child {
+    color: #858197;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.section-label {
+    color: #9B8ACD;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 9px;
+}
+
+.header-illustration {
+    width: 125px;
+    height: 125px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DDD5F3;
+    border-radius: 50%;
+    color: #8E7BD4;
+    font-size: 65px;
+}
+
+/* INTRO */
+
+.counseling-intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 25px;
+    background: #FBEEEA;
+    border-radius: 18px;
+    margin-bottom: 40px;
+}
+
+.intro-icon {
+    color: #D69B82;
+    font-size: 30px;
+}
+
+.counseling-intro h2 {
+    color: #76574D;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.counseling-intro p {
+    color: #967C73;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* SECTION */
+
+.section-heading {
+    margin-bottom: 22px;
+}
+
+.section-heading h2 {
+    color: #29263B;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.section-heading > p:last-child {
+    color: #9691A5;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* SERVICES */
+
+.service-section {
+    margin-bottom: 40px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #EEEAF5;
+    border-radius: 18px;
+    padding: 25px;
+    transition: 0.25s;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(60, 45, 100, 0.07);
+}
+
+.service-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.online-icon {
+    color: #8E7BD4;
+    background: #F0EDFA;
+}
+
+.offline-icon {
+    color: #6B9B79;
+    background: #EDF5EF;
+}
+
+.service-tag {
+    color: #9B8ACD;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.service-card h3 {
+    color: #29263B;
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.service-card > p {
+    color: #858197;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.service-card ul {
+    padding-left: 18px;
+    margin: 18px 0;
+}
+
+.service-card li {
+    color: #77718F;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.service-button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #F0EDFA;
+    color: #7562BC;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.service-button:hover {
+    background: #8E7BD4;
+    color: white;
+}
+
+/* PROCESS */
+
+.process-section {
+    margin-bottom: 40px;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.process-item {
+    padding: 20px;
+    background: white;
+    border: 1px solid #EEEAF5;
+    border-radius: 15px;
+}
+
+.process-number {
+    color: #8E7BD4;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.process-item h3 {
+    color: #514477;
+    font-size: 14px;
+    margin: 13px 0 8px;
+}
+
+.process-item p {
+    color: #858197;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* FORM */
+
+.request-section {
+    background: white;
+    border: 1px solid #EEEAF5;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+#counselingForm {
+    margin-top: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #514477;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 1px solid #EEEAF5;
+    border-radius: 10px;
+    background: #FFFEFF;
+    color: #514477;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #8E7BD4;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 11px;
+    background: #8E7BD4;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: #7562BC;
+}
+
+.form-disclaimer {
+    color: #A09BAD;
+    font-size: 11px;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-message {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #EDF5EF;
+    color: #64836D;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* PRIVACY */
+
+.privacy-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 22px;
+    background: #F7F5FC;
+    border-radius: 16px;
+}
+
+.privacy-icon {
+    font-size: 25px;
+    color: #8E7BD4;
+}
+
+.privacy-card h3 {
+    color: #514477;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.privacy-card p {
+    color: #858197;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.counseling-footer {
+    text-align: center;
+    color: #A09BAD;
+    font-size: 11px;
+    line-height: 1.8;
+    padding: 25px 0 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .counseling-container {
+        padding: 25px 18px;
+    }
+
+    .counseling-header {
+        padding: 25px;
+    }
+
+    .counseling-header h1 {
+        font-size: 25px;
+    }
+
+    .header-illustration {
+        display: none;
+    }
+
+    .service-grid,
+    .process-grid,
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .request-section {
+        padding: 22px;
+    }
+}

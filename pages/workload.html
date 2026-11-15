@@ -1,11 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMate | Workload</title>
+
+    <title>Academic Workload | MindMate</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/workload.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+
+<div class="workload-page">
+
+    <!-- HEADER -->
+    <header class="workload-header">
+
+        <a href="../index.html" class="brand">
+            <span class="brand-mark">m</span>
+            Mind<span class="brand-light">Mate</span>
+        </a>
+
+        <a href="../index.html" class="back-link">
+            ← Kembali ke Dashboard
+        </a>
+
+    </header>
+
+
+    <main class="workload-container">
+
+        <!-- INTRO -->
+        <section class="workload-intro">
+
+            <span class="section-label">ACADEMIC WORKLOAD</span>
+
+            <h1>Kelola tugas, <span>atur prioritas.</span></h1>
+
+            <p>
+                Catat tugas akademikmu, pantau deadline,
+                dan kelola aktivitas kuliah dengan lebih teratur.
+            </p>
+
+        </section>
+
+
+        <!-- SUMMARY -->
+        <section class="workload-summary">
+
+            <div class="summary-card">
+                <span class="summary-icon">📚</span>
+                <div>
+                    <small>Total Tugas</small>
+                    <h2 id="totalTasks">0</h2>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <span class="summary-icon">⏳</span>
+                <div>
+                    <small>Belum Selesai</small>
+                    <h2 id="pendingTasks">0</h2>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <span class="summary-icon">✓</span>
+                <div>
+                    <small>Selesai</small>
+                    <h2 id="completedTasks">0</h2>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ADD TASK -->
+        <section class="task-form-card">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Tambah Tugas</h2>
+                    <p>Masukkan informasi tugas kuliahmu.</p>
+                </div>
+            </div>
+
+            <form id="taskForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="taskName">Nama Tugas</label>
+                        <input
+                            type="text"
+                            id="taskName"
+                            placeholder="Contoh: Laporan Praktikum"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="courseName">Mata Kuliah</label>
+                        <input
+                            type="text"
+                            id="courseName"
+                            placeholder="Contoh: Algoritma Pemrograman"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="taskDeadline">Deadline</label>
+                        <input
+                            type="date"
+                            id="taskDeadline"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="taskPriority">Prioritas</label>
+                        <select id="taskPriority" required>
+                            <option value="">Pilih Prioritas</option>
+                            <option value="Tinggi">Tinggi</option>
+                            <option value="Sedang">Sedang</option>
+                            <option value="Rendah">Rendah</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="add-task-btn">
+                    + Tambahkan Tugas
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- TASK LIST -->
+        <section class="task-list-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Daftar Tugas</h2>
+                    <p>Pantau progres tugas akademikmu.</p>
+                </div>
+
+                <select id="taskFilter" class="task-filter">
+                    <option value="Semua">Semua Tugas</option>
+                    <option value="Belum">Belum Selesai</option>
+                    <option value="Selesai">Selesai</option>
+                </select>
+            </div>
+
+            <div id="taskList" class="task-list">
+
+                <div class="empty-task">
+                    <span>📝</span>
+                    <h3>Belum ada tugas</h3>
+                    <p>Tambahkan tugas pertamamu untuk mulai mengatur aktivitas akademik.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- REMINDER -->
+        <section class="workload-reminder">
+
+            <span>♡</span>
+
+            <div>
+                <h3>Produktif bukan berarti harus menyelesaikan semuanya sekaligus.</h3>
+                <p>
+                    Kerjakan satu per satu dan berikan dirimu waktu untuk beristirahat.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/workload.js"></script>
+
 </body>
 </html>

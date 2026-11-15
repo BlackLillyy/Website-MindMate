@@ -1,11 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMate | Stress Radar</title>
+
+    <title>Stress Radar | MindMate</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/stress-radar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
-    
+
+<div class="radar-page">
+
+    <header class="radar-header">
+
+        <a href="../index.html" class="brand">
+            <span class="brand-mark">m</span>
+            Mind<span class="brand-light">Mate</span>
+        </a>
+
+        <a href="../index.html" class="back-link">
+            ← Kembali ke Dashboard
+        </a>
+
+    </header>
+
+
+    <main class="radar-container">
+
+        <!-- INTRO -->
+        <section class="radar-intro">
+
+            <span class="section-label">STRESS RADAR</span>
+
+            <h1>Kenali pola, <span>pahami dirimu.</span></h1>
+
+            <p>
+                Lihat gambaran beban akademik dan suasana hatimu
+                berdasarkan aktivitas yang telah kamu catat.
+            </p>
+
+        </section>
+
+
+        <!-- OVERVIEW -->
+        <section class="radar-overview">
+
+            <div class="overview-card">
+                <span>📚</span>
+                <div>
+                    <small>Tugas Belum Selesai</small>
+                    <h2 id="radarPending">0</h2>
+                </div>
+            </div>
+
+            <div class="overview-card">
+                <span>⏰</span>
+                <div>
+                    <small>Deadline Hari Ini</small>
+                    <h2 id="radarDeadline">0</h2>
+                </div>
+            </div>
+
+            <div class="overview-card">
+                <span>♡</span>
+                <div>
+                    <small>Catatan Mood</small>
+                    <h2 id="radarMood">0</h2>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- RADAR CHART -->
+        <section class="radar-chart-card">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Academic & Mood Radar</h2>
+                    <p>Visualisasi indikator aktivitas dan refleksi dirimu.</p>
+                </div>
+
+                <span class="chart-label">PERSONAL OVERVIEW</span>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="stressRadarChart"></canvas>
+            </div>
+
+            <p class="chart-caption">
+                Visualisasi ini merupakan indikator sederhana berdasarkan
+                data yang kamu masukkan, bukan hasil pemeriksaan psikologis.
+            </p>
+
+        </section>
+
+
+        <!-- INSIGHT -->
+        <section class="insight-card">
+
+            <div class="insight-icon">✦</div>
+
+            <div>
+                <span class="section-label">PERSONAL INSIGHT</span>
+
+                <h2 id="insightTitle">Mulai kenali aktivitasmu</h2>
+
+                <p id="insightDescription">
+                    Tambahkan catatan mood dan tugas akademik untuk
+                    mendapatkan gambaran aktivitasmu.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- INDICATORS -->
+        <section class="indicator-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Detail Indikator</h2>
+                    <p>Ringkasan dari data yang telah kamu catat.</p>
+                </div>
+            </div>
+
+            <div id="indicatorList" class="indicator-list"></div>
+
+        </section>
+
+
+        <!-- REMINDER -->
+        <section class="radar-reminder">
+
+            <span>♡</span>
+
+            <div>
+                <h3>Angka bukan keseluruhan ceritamu.</h3>
+
+                <p>
+                    Setiap orang memiliki pengalaman yang berbeda.
+                    Gunakan informasi ini sebagai bahan refleksi,
+                    bukan sebagai label untuk dirimu.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/stress-radar.js"></script>
+
 </body>
 </html>

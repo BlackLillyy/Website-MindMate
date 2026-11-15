@@ -1,11 +1,356 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMate | Counseling</title>
+
+    <title>Layanan Konseling | MindMate</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/counseling.css">
 </head>
+
 <body>
-    
+
+    <main class="counseling-container">
+
+        <a href="../index.html" class="back-link">
+            ← Kembali ke Dashboard
+        </a>
+
+        <!-- HEADER -->
+        <header class="counseling-header">
+
+            <div>
+                <p class="section-label">PROFESSIONAL SUPPORT</p>
+
+                <h1>Layanan Konseling</h1>
+
+                <p>
+                    Tidak semua hal harus kamu hadapi sendirian.
+                    Temukan ruang aman untuk bercerita, memahami diri,
+                    dan mendapatkan dukungan yang tepat.
+                </p>
+            </div>
+
+            <div class="header-illustration">
+                <span>♡</span>
+            </div>
+
+        </header>
+
+
+        <!-- INTRODUCTION -->
+        <section class="counseling-intro">
+
+            <div class="intro-icon">✧</div>
+
+            <div>
+                <h2>It's okay to ask for help.</h2>
+
+                <p>
+                    Mencari bantuan bukan berarti kamu lemah.
+                    Konseling dapat menjadi ruang untuk membicarakan
+                    perasaan, tantangan akademik, hubungan sosial,
+                    maupun hal-hal lain yang sedang kamu hadapi.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- SERVICE OPTIONS -->
+        <section class="service-section">
+
+            <div class="section-heading">
+                <p class="section-label">OUR SERVICES</p>
+                <h2>Pilihan Layanan</h2>
+
+                <p>
+                    Pilih bentuk layanan yang sesuai dengan kebutuhanmu.
+                </p>
+            </div>
+
+
+            <div class="service-grid">
+
+                <div class="service-card">
+
+                    <div class="service-icon online-icon">
+                        ◉
+                    </div>
+
+                    <span class="service-tag">FLEXIBLE SUPPORT</span>
+
+                    <h3>Konseling Online</h3>
+
+                    <p>
+                        Konsultasi secara daring melalui platform
+                        komunikasi yang disediakan oleh penyedia layanan.
+                    </p>
+
+                    <ul>
+                        <li>Fleksibel dari berbagai lokasi</li>
+                        <li>Penjadwalan konsultasi</li>
+                        <li>Komunikasi jarak jauh</li>
+                    </ul>
+
+                    <button
+                        class="service-button"
+                        onclick="selectService('Online')">
+                        Pilih Konseling Online →
+                    </button>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon offline-icon">
+                        ♧
+                    </div>
+
+                    <span class="service-tag">PERSONAL SUPPORT</span>
+
+                    <h3>Konseling Offline</h3>
+
+                    <p>
+                        Konsultasi secara langsung dengan konselor
+                        atau tenaga profesional di lokasi layanan.
+                    </p>
+
+                    <ul>
+                        <li>Pertemuan tatap muka</li>
+                        <li>Interaksi langsung</li>
+                        <li>Lingkungan konsultasi terarah</li>
+                    </ul>
+
+                    <button
+                        class="service-button"
+                        onclick="selectService('Offline')">
+                        Pilih Konseling Offline →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COUNSELING PROCESS -->
+        <section class="process-section">
+
+            <div class="section-heading">
+                <p class="section-label">HOW IT WORKS</p>
+                <h2>Bagaimana Prosesnya?</h2>
+            </div>
+
+            <div class="process-grid">
+
+                <div class="process-item">
+                    <span class="process-number">01</span>
+                    <h3>Pilih Layanan</h3>
+                    <p>
+                        Tentukan jenis konsultasi yang sesuai
+                        dengan kebutuhanmu.
+                    </p>
+                </div>
+
+                <div class="process-item">
+                    <span class="process-number">02</span>
+                    <h3>Ajukan Permintaan</h3>
+                    <p>
+                        Isi informasi dasar dan preferensi
+                        jadwal konsultasi.
+                    </p>
+                </div>
+
+                <div class="process-item">
+                    <span class="process-number">03</span>
+                    <h3>Konfirmasi</h3>
+                    <p>
+                        Tunggu informasi lanjutan dari penyedia
+                        layanan konseling.
+                    </p>
+                </div>
+
+                <div class="process-item">
+                    <span class="process-number">04</span>
+                    <h3>Mulai Konsultasi</h3>
+                    <p>
+                        Ikuti sesi konsultasi sesuai jadwal
+                        yang telah disepakati.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- REQUEST FORM -->
+        <section class="request-section" id="requestSection">
+
+            <div class="section-heading">
+                <p class="section-label">CONSULTATION REQUEST</p>
+                <h2>Ajukan Konsultasi</h2>
+
+                <p>
+                    Isi formulir berikut untuk menyampaikan
+                    preferensi layanan konseling.
+                </p>
+            </div>
+
+
+            <form id="counselingForm">
+
+                <div class="form-group">
+                    <label for="studentName">Nama</label>
+
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Masukkan nama"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="studentEmail">Email</label>
+
+                    <input
+                        type="email"
+                        id="studentEmail"
+                        placeholder="Masukkan email aktif"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="serviceType">
+                            Jenis Konseling
+                        </label>
+
+                        <select id="serviceType" required>
+                            <option value="">Pilih layanan</option>
+                            <option value="Online">Online</option>
+                            <option value="Offline">Offline</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="preferredDate">
+                            Preferensi Tanggal
+                        </label>
+
+                        <input
+                            type="date"
+                            id="preferredDate"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label for="consultationTopic">
+                        Topik Konsultasi
+                    </label>
+
+                    <select id="consultationTopic" required>
+                        <option value="">Pilih topik</option>
+                        <option value="Tekanan Akademik">
+                            Tekanan Akademik
+                        </option>
+
+                        <option value="Manajemen Stres">
+                            Manajemen Stres
+                        </option>
+
+                        <option value="Hubungan Sosial">
+                            Hubungan Sosial
+                        </option>
+
+                        <option value="Pengembangan Diri">
+                            Pengembangan Diri
+                        </option>
+
+                        <option value="Lainnya">
+                            Lainnya
+                        </option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="consultationNote">
+                        Catatan Tambahan (Opsional)
+                    </label>
+
+                    <textarea
+                        id="consultationNote"
+                        rows="4"
+                        placeholder="Tuliskan informasi tambahan jika diperlukan..."
+                    ></textarea>
+                </div>
+
+
+                <button type="submit" class="submit-button">
+                    Ajukan Permintaan →
+                </button>
+
+                <p class="form-disclaimer">
+                    Formulir ini merupakan simulasi pengajuan konsultasi.
+                    Belum ada permintaan yang dikirim kepada konselor.
+                </p>
+
+            </form>
+
+            <div id="formMessage" class="form-message" hidden></div>
+
+        </section>
+
+
+        <!-- PRIVACY -->
+        <section class="privacy-card">
+
+            <div class="privacy-icon">♧</div>
+
+            <div>
+                <h3>Privasi dan Kerahasiaan</h3>
+
+                <p>
+                    Informasi yang dibagikan dalam proses konseling
+                    perlu dikelola secara aman dan sesuai kebijakan
+                    privasi penyedia layanan. Pastikan kamu memahami
+                    kebijakan tersebut sebelum memulai konsultasi.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="counseling-footer">
+            <p>
+                MindMate bukan layanan darurat dan tidak menggantikan
+                bantuan profesional. Jika kamu berada dalam situasi
+                darurat, hubungi layanan darurat setempat atau orang
+                tepercaya yang dapat membantu secara langsung.
+            </p>
+        </footer>
+
+    </main>
+
+
+    <script src="../js/counseling.js"></script>
+
 </body>
 </html>

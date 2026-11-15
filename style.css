@@ -48,6 +48,25 @@ button {
     display: flex;
     flex-direction: column;
     z-index: 5;
+
+    /* Tambahan */
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Scrollbar minimalis */
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #D8D2EA;
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .brand {
@@ -549,6 +568,17 @@ h1 {
     margin-left: 5px;
 }
 
+.mood-options button.selected span {
+    background: #e8e2fa;
+    border: 2px solid #8e7bd4;
+    transform: scale(1.1);
+}
+
+.mood-options button.selected small {
+    color: #7968c2;
+    font-weight: 700;
+}
+
 /* ASSESSMENT CARD */
 
 .mini-label {
@@ -961,4 +991,16 @@ footer {
     footer span {
         text-align: right;
     }
+}
+
+.button-dark {
+    display: inline-block;
+    text-align: center;
+    transition: .2s ease;
+}
+
+.button-dark:hover {
+    background: #7564bd;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px #8e7bd433;
 }

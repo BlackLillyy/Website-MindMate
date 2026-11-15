@@ -1,11 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindMate | Assessment</title>
+
+    <title>Self Assessment | MindMate</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/assessment.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+
+<div class="assessment-page">
+
+    <header class="assessment-header">
+        <a href="../index.html" class="brand">
+            <span class="brand-mark">m</span>
+            <span>Mind<span class="brand-light">Mate</span></span>
+        </a>
+
+        <a href="../index.html" class="back-link">
+            ← Kembali ke Dashboard
+        </a>
+    </header>
+
+    <main class="assessment-container">
+
+        <div class="assessment-intro">
+            <span class="mini-label">SELF-ASSESSMENT</span>
+
+            <h1>Kenali kondisi dirimu <span>hari ini.</span></h1>
+
+            <p>
+                Luangkan beberapa menit untuk memahami bagaimana
+                aktivitas akademik memengaruhi kondisi emosionalmu.
+            </p>
+        </div>
+
+        <div class="assessment-info">
+            <span>◷ Estimasi 3–5 menit</span>
+            <span>♡ Tidak ada jawaban benar atau salah</span>
+        </div>
+
+        <form id="assessmentForm">
+
+            <div class="question-card">
+                <span class="question-number">PERTANYAAN 01</span>
+
+                <h3>Seberapa sering kamu merasa kewalahan dengan tugas kuliah?</h3>
+
+                <label>
+                    <input type="radio" name="q1" value="0">
+                    Tidak pernah
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="1">
+                    Jarang
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="2">
+                    Sering
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="3">
+                    Hampir selalu
+                </label>
+            </div>
+
+            <div class="question-card">
+                <span class="question-number">PERTANYAAN 02</span>
+
+                <h3>Seberapa sering kamu kesulitan mengatur waktu antara kuliah dan kehidupan pribadi?</h3>
+
+                <label>
+                    <input type="radio" name="q2" value="0">
+                    Tidak pernah
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="1">
+                    Jarang
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="2">
+                    Sering
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="3">
+                    Hampir selalu
+                </label>
+            </div>
+
+            <div class="question-card">
+                <span class="question-number">PERTANYAAN 03</span>
+
+                <h3>Seberapa sering kamu merasa cemas menghadapi ujian atau penilaian akademik?</h3>
+
+                <label>
+                    <input type="radio" name="q3" value="0">
+                    Tidak pernah
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="1">
+                    Jarang
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="2">
+                    Sering
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="3">
+                    Hampir selalu
+                </label>
+            </div>
+
+            <div class="question-card">
+                <span class="question-number">PERTANYAAN 04</span>
+
+                <h3>Seberapa sering aktivitas akademik membuatmu sulit beristirahat dengan nyaman?</h3>
+
+                <label>
+                    <input type="radio" name="q4" value="0">
+                    Tidak pernah
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="1">
+                    Jarang
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="2">
+                    Sering
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="3">
+                    Hampir selalu
+                </label>
+            </div>
+
+            <div class="question-card">
+                <span class="question-number">PERTANYAAN 05</span>
+
+                <h3>Seberapa sering kamu merasa kesulitan mempertahankan motivasi untuk belajar?</h3>
+
+                <label>
+                    <input type="radio" name="q5" value="0">
+                    Tidak pernah
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="1">
+                    Jarang
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="2">
+                    Sering
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="3">
+                    Hampir selalu
+                </label>
+            </div>
+
+            <div class="assessment-submit">
+                <p>Pastikan semua pertanyaan sudah terjawab.</p>
+
+                <button type="submit" class="button button-dark">
+                    Lihat Hasil Assessment →
+                </button>
+            </div>
+
+        </form>
+
+        <div id="assessmentResult" class="result-card" hidden>
+            <span class="mini-label">HASIL REFLEKSI</span>
+
+            <h2 id="resultTitle"></h2>
+
+            <p id="resultDescription"></p>
+
+            <button onclick="location.reload()" class="button button-dark">
+                Ulangi Assessment
+            </button>
+        </div>
+
+        <p class="assessment-disclaimer">
+            MindMate merupakan sarana refleksi dan pemantauan diri,
+            bukan alat diagnosis atau pengganti konsultasi profesional.
+        </p>
+
+    </main>
+
+</div>
+
+<script src="../js/assessment.js"></script>
+
 </body>
 </html>
