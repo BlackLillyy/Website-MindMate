@@ -37,3 +37,26 @@ moodButtons.forEach(button => {
         alert("Mood kamu hari ini: " + moodName);
     });
 });
+
+function getUserPreferences() {
+    return JSON.parse(
+        localStorage.getItem("userPreferences")
+    ) || {};
+}
+
+function applyGlobalTheme() {
+    const preferences = getUserPreferences();
+
+    const isDarkMode =
+        preferences.darkMode === true ||
+        preferences.darkMode === "true";
+
+    document.body.classList.toggle(
+        "dark-mode",
+        isDarkMode
+    );
+
+    console.log("Dark Mode:", isDarkMode);
+}
+
+applyGlobalTheme();

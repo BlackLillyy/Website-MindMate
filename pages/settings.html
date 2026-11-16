@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | MindMate</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/settings.css">
+</head>
+<body>
+
+<div class="settings-container">
+
+    <header class="settings-header">
+        <div>
+            <p class="eyebrow">PREFERENCES</p>
+            <h1>Pengaturan</h1>
+            <p>Sesuaikan MindMate dengan kebutuhanmu.</p>
+        </div>
+
+        <a href="../index.html" class="back-button">
+            ← Dashboard
+        </a>
+    </header>
+
+    <!-- PROFILE -->
+    <section class="settings-card">
+        <div class="section-heading">
+            <div>
+                <h2>Profil Pengguna</h2>
+                <p>Kelola informasi dasar akunmu.</p>
+            </div>
+            <span class="section-icon">♙</span>
+        </div>
+
+        <form id="profileForm">
+
+            <div class="form-group">
+                <label for="userName">Nama Lengkap</label>
+                <input type="text" id="userName"
+                    placeholder="Masukkan nama lengkap">
+            </div>
+
+            <div class="form-group">
+                <label for="userEmail">Email</label>
+                <input type="email" id="userEmail"
+                    placeholder="Masukkan email">
+            </div>
+
+            <button type="submit" class="save-button">
+                Simpan Profil
+            </button>
+
+        </form>
+    </section>
+
+    <!-- NOTIFICATION -->
+    <section class="settings-card">
+
+        <div class="section-heading">
+            <div>
+                <h2>Notifikasi</h2>
+                <p>Atur pengingat aktivitas MindMate.</p>
+            </div>
+            <span class="section-icon">♧</span>
+        </div>
+
+        <div class="setting-option">
+            <div>
+                <h3>Pengingat Tugas</h3>
+                <p>Pengingat untuk deadline tugas akademik.</p>
+            </div>
+
+            <label class="switch">
+                <input type="checkbox" id="taskNotification">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="setting-option">
+            <div>
+                <h3>Pengingat Mood Tracker</h3>
+                <p>Pengingat untuk mencatat suasana hati.</p>
+            </div>
+
+            <label class="switch">
+                <input type="checkbox" id="moodNotification">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+    </section>
+
+    <!-- APPEARANCE -->
+    <section class="settings-card">
+
+        <div class="section-heading">
+            <div>
+                <h2>Tampilan</h2>
+                <p>Sesuaikan tampilan aplikasi.</p>
+            </div>
+            <span class="section-icon">✧</span>
+        </div>
+
+        <div class="setting-option">
+            <div>
+                <h3>Mode Gelap</h3>
+                <p>Gunakan tampilan gelap pada aplikasi.</p>
+            </div>
+
+            <label class="switch">
+                <input type="checkbox" id="darkMode">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="settings-card about-card">
+
+        <div class="section-heading">
+            <div>
+                <h2>Tentang MindMate</h2>
+                <p>Informasi mengenai aplikasi.</p>
+            </div>
+            <span class="section-icon">♡</span>
+        </div>
+
+        <div class="about-content">
+            <h3>MindMate 🌿</h3>
+            <p>
+                MindMate merupakan aplikasi berbasis web
+                yang dirancang untuk membantu mahasiswa
+                memantau kesejahteraan mental dan mengelola
+                aktivitas akademik.
+            </p>
+
+            <span class="version">Version 1.0.0</span>
+        </div>
+
+    </section>
+
+    <p id="successMessage" class="success-message"></p>
+
+</div>
+
+<script src="../script.js"></script>
+<script src="../js/settings.js"></script>
+
+</body>
+</html>
