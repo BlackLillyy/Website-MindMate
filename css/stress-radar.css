@@ -302,3 +302,143 @@
         padding: 18px;
     }
 }
+
+/* =====================================
+   MINDMATE - STRESS RADAR DARK MODE
+===================================== */
+
+/* MAIN PAGE */
+body.dark-mode .radar-page {
+    background: #171622 !important;
+    color: #F4F1FA !important;
+}
+
+/* HEADER */
+body.dark-mode .radar-header .brand {
+    color: #F4F1FA;
+}
+
+body.dark-mode .radar-header .brand-light {
+    color: #B8A8F5;
+}
+
+body.dark-mode .radar-header .back-link {
+    color: #B8A8F5;
+}
+
+/* INTRO */
+body.dark-mode .radar-intro h1 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .radar-intro h1 span {
+    color: #B8A8F5;
+}
+
+body.dark-mode .radar-intro p {
+    color: #AAA5B9;
+}
+
+body.dark-mode .section-label {
+    background: #373149;
+    color: #B8A8F5;
+}
+
+/* OVERVIEW */
+body.dark-mode .overview-card {
+    background: #242232;
+    border-color: #373348;
+}
+
+body.dark-mode .overview-card > span {
+    background: #40375D;
+    color: #B8A8F5;
+}
+
+body.dark-mode .overview-card small {
+    color: #AAA5B9;
+}
+
+body.dark-mode .overview-card h2 {
+    color: #F4F1FA;
+}
+
+/* GENERAL CARD */
+body.dark-mode .radar-chart-card,
+body.dark-mode .indicator-section {
+    background: #242232;
+    border-color: #373348;
+}
+
+/* SECTION HEADING */
+body.dark-mode .section-heading h2 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .section-heading p {
+    color: #AAA5B9;
+}
+
+body.dark-mode .chart-label {
+    background: #373149;
+    color: #B8A8F5;
+}
+
+/* CHART */
+body.dark-mode .chart-caption {
+    color: #8F899F;
+}
+
+/* INSIGHT */
+body.dark-mode .insight-card {
+    background: #302D40;
+    border: 1px solid #484359;
+}
+
+body.dark-mode .insight-icon {
+    background: #40375D;
+    color: #B8A8F5;
+}
+
+body.dark-mode .insight-card h2 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .insight-card p {
+    color: #B9B3CA;
+}
+
+/* INDICATOR */
+body.dark-mode .indicator-info {
+    color: #F4F1FA;
+}
+
+body.dark-mode .indicator-info span:last-child {
+    color: #B8A8F5;
+}
+
+body.dark-mode .indicator-track {
+    background: #403A50;
+}
+
+body.dark-mode .indicator-progress {
+    background: #A995F5;
+}
+
+/* REMINDER */
+body.dark-mode .radar-reminder {
+    background: #242232;
+    border-color: #373348;
+}
+
+body.dark-mode .radar-reminder > span {
+    color: #B8A8F5;
+}
+
+body.dark-mode .radar-reminder h3 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .radar-reminder p {
+    color: #AAA5B9;
+}

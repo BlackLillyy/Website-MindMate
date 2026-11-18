@@ -361,3 +361,181 @@
         white-space: nowrap;
     }
 }
+
+/* =====================================
+   MINDMATE - MOOD TRACKER DARK MODE
+===================================== */
+
+/* MAIN PAGE */
+body.dark-mode .mood-page {
+    background: #171622 !important;
+    color: #F4F1FA !important;
+}
+
+/* HEADER */
+body.dark-mode .mood-header .brand {
+    color: #F4F1FA;
+}
+
+body.dark-mode .mood-header .brand-light {
+    color: #B8A8F5;
+}
+
+body.dark-mode .mood-header .back-link {
+    color: #B8A8F5;
+}
+
+/* INTRO */
+body.dark-mode .mood-intro h1 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .mood-intro h1 span {
+    color: #B8A8F5;
+}
+
+body.dark-mode .mood-intro p {
+    color: #AAA5B9;
+}
+
+body.dark-mode .section-label {
+    background: #373149;
+    color: #B8A8F5;
+}
+
+/* CHECK-IN & HISTORY */
+body.dark-mode .mood-checkin,
+body.dark-mode .mood-history {
+    background: #242232 !important;
+    border-color: #373348 !important;
+    color: #F4F1FA;
+}
+
+/* SECTION HEADING */
+body.dark-mode .section-heading h2 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .section-heading p {
+    color: #AAA5B9;
+}
+
+body.dark-mode .mood-date {
+    background: #373149;
+    color: #B8A8F5;
+}
+
+/* MOOD OPTIONS */
+body.dark-mode .mood-options button {
+    background: #302D40;
+    border-color: #484359;
+}
+
+body.dark-mode .mood-options button small {
+    color: #D9D4E5;
+}
+
+body.dark-mode .mood-options button:hover {
+    background: #39344D;
+    border-color: #8E7BD4;
+}
+
+body.dark-mode .mood-options button.selected {
+    background: #40375D;
+    border: 2px solid #A995F5;
+}
+
+body.dark-mode .mood-options button.selected small {
+    color: #C6B9FF;
+}
+
+/* MOOD NOTE */
+body.dark-mode .mood-note label {
+    color: #F4F1FA;
+}
+
+body.dark-mode .mood-note p {
+    color: #AAA5B9;
+}
+
+body.dark-mode .mood-note textarea {
+    background: #302D40;
+    border-color: #484359;
+    color: #F4F1FA;
+}
+
+body.dark-mode .mood-note textarea:focus {
+    background: #373149;
+    border-color: #A995F5;
+}
+
+body.dark-mode .mood-note textarea::placeholder {
+    color: #8F899F;
+}
+
+/* SAVE BUTTON */
+body.dark-mode #saveMoodBtn {
+    background: #8E7BD4;
+    color: #FFFFFF;
+}
+
+body.dark-mode #saveMoodBtn:hover {
+    background: #7663BD;
+}
+
+/* EMPTY HISTORY */
+body.dark-mode .empty-history h3 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .empty-history p {
+    color: #AAA5B9;
+}
+
+/* HISTORY ITEM */
+body.dark-mode .history-item {
+    background: #302D40;
+    border-color: #484359;
+}
+
+body.dark-mode .history-emoji {
+    background: #40375D;
+}
+
+body.dark-mode .history-content h4 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .history-content p {
+    color: #B9B3CA;
+}
+
+body.dark-mode .history-content small {
+    color: #8F899F;
+}
+
+body.dark-mode .delete-mood {
+    color: #AAA5B9;
+}
+
+body.dark-mode .delete-mood:hover {
+    color: #F08A98;
+}
+
+/* REMINDER */
+body.dark-mode .mood-reminder {
+    background: #302D40;
+    border: 1px solid #484359;
+}
+
+body.dark-mode .mood-reminder > span {
+    color: #B8A8F5;
+}
+
+body.dark-mode .mood-reminder h3 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .mood-reminder p {
+    color: #AAA5B9;
+}
