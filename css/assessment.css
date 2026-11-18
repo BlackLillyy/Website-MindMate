@@ -218,3 +218,123 @@ body {
         padding: 18px;
     }
 }
+
+/* =====================================
+   SELF ASSESSMENT - DARK MODE
+===================================== */
+
+/* Background halaman */
+body.dark-mode .assessment-page {
+    background: #171622 !important;
+    color: #F4F1FA;
+}
+
+/* Header */
+body.dark-mode .assessment-header {
+    background: transparent;
+}
+
+body.dark-mode .brand {
+    color: #F4F1FA;
+}
+
+body.dark-mode .brand-light {
+    color: #B8A8F5;
+}
+
+body.dark-mode .back-link {
+    color: #B9B3CA;
+}
+
+body.dark-mode .back-link:hover {
+    color: #B8A8F5;
+}
+
+/* Intro */
+body.dark-mode .assessment-intro h1 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .assessment-intro h1 span {
+    color: #B8A8F5;
+}
+
+body.dark-mode .assessment-intro p {
+    color: #AAA5B9;
+}
+
+body.dark-mode .mini-label {
+    color: #B8A8F5;
+}
+
+/* Informasi assessment */
+body.dark-mode .assessment-info {
+    color: #B9B3CA;
+}
+
+/* Question card */
+body.dark-mode .question-card {
+    background: #242232 !important;
+    border-color: #373348 !important;
+    color: #F4F1FA;
+}
+
+body.dark-mode .question-number {
+    color: #B8A8F5;
+}
+
+body.dark-mode .question-card h3 {
+    color: #F4F1FA;
+}
+
+/* Pilihan jawaban */
+body.dark-mode .question-card label {
+    background: #302D40;
+    border-color: #484359;
+    color: #D9D4E5;
+}
+
+body.dark-mode .question-card label:hover {
+    background: #39344D;
+    border-color: #8E7BD4;
+}
+
+/* Radio button */
+body.dark-mode .question-card input[type="radio"] {
+    accent-color: #A995F5;
+}
+
+/* Submit section */
+body.dark-mode .assessment-submit p {
+    color: #AAA5B9;
+}
+
+/* Tombol */
+body.dark-mode .button-dark {
+    background: #8E7BD4;
+    color: #FFFFFF;
+}
+
+body.dark-mode .button-dark:hover {
+    background: #7663BD;
+}
+
+/* Hasil assessment */
+body.dark-mode .result-card {
+    background: #242232 !important;
+    border-color: #373348 !important;
+    color: #F4F1FA;
+}
+
+body.dark-mode .result-card h2 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .result-card p {
+    color: #B9B3CA;
+}
+
+/* Disclaimer */
+body.dark-mode .assessment-disclaimer {
+    color: #8F899F;
+}

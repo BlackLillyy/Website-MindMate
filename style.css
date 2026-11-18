@@ -1005,30 +1005,54 @@ footer {
     box-shadow: 0 5px 12px #f9f7ff33;
 }
 
-/* =================
-   GLOBAL DARK MODE 
-==================== */
+/* =====================================
+   MINDMATE - GLOBAL DARK MODE
+===================================== */
 
 body.dark-mode {
-    background: #171622 !important;
-    color: #F4F1FA !important;
+    background-color: #171622 !important;
+    color: #F4F1FA;
 }
 
-/* Background halaman */
-body.dark-mode main,
-body.dark-mode .main-content,
-body.dark-mode .page-content {
-    background: #171622 !important;
-    color: #F4F1FA !important;
+/* Warna teks global */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #F4F1FA;
+}
+
+body.dark-mode p,
+body.dark-mode small,
+body.dark-mode .text-muted {
+    color: #AAA5B9;
 }
 
 /* Sidebar */
 body.dark-mode .sidebar {
-    background: #242232 !important;
+    background-color: #211F2E !important;
     border-color: #373348 !important;
 }
 
-/* Card dan container */
+body.dark-mode .sidebar a {
+    color: #B9B3CA;
+}
+
+body.dark-mode .sidebar a.active {
+    background-color: #373149;
+    color: #B8A8F5;
+}
+
+/* Kontainer utama */
+body.dark-mode main,
+body.dark-mode .main-content,
+body.dark-mode .page-content {
+    background-color: #171622 !important;
+}
+
+/* Semua card */
 body.dark-mode .card,
 body.dark-mode .summary-card,
 body.dark-mode .task-form-card,
@@ -1039,59 +1063,26 @@ body.dark-mode .journey-card,
 body.dark-mode .radar-card,
 body.dark-mode .article-card,
 body.dark-mode .counseling-card {
-    background: #242232 !important;
+    background-color: #242232 !important;
     border-color: #373348 !important;
     color: #F4F1FA !important;
 }
 
-/* Judul dan teks */
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5,
-body.dark-mode label {
-    color: #F4F1FA;
-}
-
-body.dark-mode p,
-body.dark-mode span,
-body.dark-mode small {
-    color: #B9B3CA;
-}
-
-/* Input dan select */
+/* Form */
 body.dark-mode input,
 body.dark-mode textarea,
 body.dark-mode select {
-    background: #302D40 !important;
-    border-color: #484359 !important;
+    background-color: #302D40 !important;
     color: #F4F1FA !important;
+    border-color: #484359 !important;
 }
 
-/* Placeholder */
 body.dark-mode input::placeholder,
 body.dark-mode textarea::placeholder {
-    color: #AAA5B9 !important;
-}
-
-/* Elemen dengan background terang */
-body.dark-mode .welcome-banner,
-body.dark-mode .sidebar-help {
-    background: #F0EDFA !important;
-    color: #29263B !important;
-}
-
-body.dark-mode .welcome-banner h1,
-body.dark-mode .welcome-banner h2,
-body.dark-mode .welcome-banner p,
-body.dark-mode .sidebar-help h3,
-body.dark-mode .sidebar-help p {
-    color: #625B78 !important;
+    color: #AAA5B9;
 }
 
 /* Garis pembatas */
-body.dark-mode hr,
-body.dark-mode .divider {
+body.dark-mode hr {
     border-color: #373348 !important;
 }
