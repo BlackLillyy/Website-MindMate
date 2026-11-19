@@ -366,6 +366,10 @@
     padding: 25px 0 10px;
 }
 
+body.dark-mode .counseling-header h1 {
+    color: #8f7cd7 !important;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 850px) {

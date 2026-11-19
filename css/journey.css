@@ -252,6 +252,149 @@
     line-height: 1.7;
 }
 
+/* DARK MODE */
+body.dark-mode .journey-container {
+    color: #F4F1FA;
+}
+
+/* Back Link */
+body.dark-mode .back-link {
+    color: #AAA5B9;
+}
+
+body.dark-mode .back-link:hover {
+    color: #B8A8F5;
+}
+
+/* Header */
+body.dark-mode .journey-header h1 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .journey-description {
+    color: #AAA5B9;
+}
+
+/* Journey Period */
+body.dark-mode .journey-period {
+    background: #302D40;
+    border: 1px solid #484359;
+}
+
+body.dark-mode .journey-period span {
+    color: #AAA5B9;
+}
+
+body.dark-mode .journey-period strong {
+    color: #B8A8F5;
+}
+
+/* Summary & Main Cards */
+body.dark-mode .summary-card,
+body.dark-mode .journey-card {
+    background: #242232;
+    border: 1px solid #373348;
+}
+
+/* Summary Card */
+body.dark-mode .summary-card p {
+    color: #B9B3CA;
+}
+
+body.dark-mode .summary-card h2 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .summary-card span {
+    color: #AAA5B9;
+}
+
+/* Summary Icons */
+body.dark-mode .mood-icon {
+    background: #39334F;
+    color: #B8A8F5;
+}
+
+body.dark-mode .task-icon {
+    background: #293D35;
+    color: #91C5A0;
+}
+
+body.dark-mode .pending-icon {
+    background: #49352F;
+    color: #E4AA91;
+}
+
+/* Card Headings */
+body.dark-mode .section-label {
+    color: #B8A8F5;
+}
+
+body.dark-mode .journey-card h2 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .card-heading p,
+body.dark-mode .card-description {
+    color: #AAA5B9;
+}
+
+/* Mood Distribution */
+body.dark-mode .distribution-info {
+    color: #C5BFD2;
+}
+
+body.dark-mode .distribution-track,
+body.dark-mode .progress-track {
+    background: #39364A;
+}
+
+body.dark-mode .distribution-fill {
+    background: #A995F5;
+}
+
+/* Reflection */
+body.dark-mode .reflection-content {
+    background: #302D40;
+    border: 1px solid #484359;
+}
+
+body.dark-mode .reflection-icon {
+    color: #B8A8F5;
+}
+
+body.dark-mode .reflection-content h3 {
+    color: #D4C9FF;
+}
+
+body.dark-mode .reflection-content p {
+    color: #B9B3CA;
+}
+
+/* Task Progress */
+body.dark-mode .progress-info,
+body.dark-mode .task-progress-detail {
+    color: #B9B3CA;
+}
+
+body.dark-mode .progress-info strong {
+    color: #B8A8F5;
+}
+
+body.dark-mode .progress-fill {
+    background: #A995F5;
+}
+
+/* Empty Message */
+body.dark-mode .empty-message {
+    color: #AAA5B9;
+}
+
+/* Footer */
+body.dark-mode .journey-footer {
+    color: #AAA5B9;
+}
+
 @media (max-width: 768px) {
     .journey-container {
         padding: 25px 18px;

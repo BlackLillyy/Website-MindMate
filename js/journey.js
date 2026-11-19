@@ -121,6 +121,12 @@ function renderMoodChart() {
 
     const ctx = document.getElementById("moodJourneyChart");
 
+    const isDarkMode = document.body.classList.contains("dark-mode");
+
+    const textColor = isDarkMode ? "#B9B3CA" : "#77718F";
+    const gridColor = isDarkMode ? "#39364A" : "#F0EEF5";
+    const pointBorderColor = isDarkMode ? "#242232" : "#FFFFFF";
+
     new Chart(ctx, {
         type: "line",
 
@@ -130,14 +136,16 @@ function renderMoodChart() {
             datasets: [{
                 label: "Mood",
                 data: dailyMood,
-                borderColor: "#8E7BD4",
-                backgroundColor: "rgba(142, 123, 212, 0.12)",
+                borderColor: "#A995F5",
+                backgroundColor: isDarkMode
+                    ? "rgba(169, 149, 245, 0.15)"
+                    : "rgba(142, 123, 212, 0.12)",
                 fill: true,
                 tension: 0.35,
                 spanGaps: false,
                 pointRadius: 5,
-                pointBackgroundColor: "#8E7BD4",
-                pointBorderColor: "#FFFFFF",
+                pointBackgroundColor: "#A995F5",
+                pointBorderColor: pointBorderColor,
                 pointBorderWidth: 2
             }]
         },
@@ -152,9 +160,16 @@ function renderMoodChart() {
                 },
 
                 tooltip: {
+                    backgroundColor: isDarkMode ? "#302D40" : "#FFFFFF",
+                    titleColor: isDarkMode ? "#F4F1FA" : "#29263B",
+                    bodyColor: isDarkMode ? "#B9B3CA" : "#77718F",
+                    borderColor: isDarkMode ? "#484359" : "#EEEAF5",
+                    borderWidth: 1,
+
                     callbacks: {
                         label: function(context) {
                             const value = context.raw;
+
                             const moodName = Object.keys(moods).find(
                                 key => moods[key] === value
                             );
@@ -172,6 +187,8 @@ function renderMoodChart() {
 
                     ticks: {
                         stepSize: 1,
+                        color: textColor,
+
                         callback: function(value) {
                             return Object.keys(moods).find(
                                 key => moods[key] === value
@@ -180,18 +197,42 @@ function renderMoodChart() {
                     },
 
                     grid: {
-                        color: "#F0EEF5"
+                        color: gridColor
+                    },
+
+                    border: {
+                        color: gridColor
                     }
                 },
 
                 x: {
+                    ticks: {
+                        color: textColor
+                    },
+
                     grid: {
                         display: false
+                    },
+
+                    border: {
+                        color: gridColor
                     }
                 }
             }
         }
     });
+}
+
+function updateJourneyChartTheme() {
+    const canvas = document.getElementById("moodJourneyChart");
+
+    const existingChart = Chart.getChart(canvas);
+
+    if (existingChart) {
+        existingChart.destroy();
+    }
+
+    renderMoodChart();
 }
 
 function renderMoodDistribution() {
@@ -284,6 +325,15 @@ function renderReflection() {
             `Catatan mood kamu cukup beragam. Setiap suasana hati punya tempatnya sendiri. Terus kenali pola dan kebutuhan dirimu.`;
     }
 }
+
+const themeObserver = new MutationObserver(() => {
+    updateJourneyChartTheme();
+});
+
+themeObserver.observe(document.body, {
+    attributes: true,
+    attributeFilter: ["class"]
+});
 
 function initializeJourney() {
     renderPeriod();
