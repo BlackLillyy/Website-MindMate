@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | MindMate</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <a class="brand" href="../index.html">
+            <span class="brand-mark">m</span>
+            <span>Mind<span class="brand-light">Mate</span></span>
+        </a>
+
+        <p class="nav-label">MENU UTAMA</p>
+
+        <nav class="nav-menu">
+            <a class="nav-link" href="../index.html">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </a>
+
+            <a class="nav-link" href="mood-tracker.html">
+                <span class="nav-icon">♡</span>
+                Mood Tracker
+            </a>
+
+            <a class="nav-link" href="assessment.html">
+                <span class="nav-icon">▤</span>
+                Self-Assessment
+            </a>
+
+            <a class="nav-link" href="workload.html">
+                <span class="nav-icon">◷</span>
+                Beban Akademik
+            </a>
+
+            <a class="nav-link" href="stress-radar.html">
+                <span class="nav-icon">⌁</span>
+                Stress Radar
+            </a>
+
+            <a class="nav-link" href="journey.html">
+                <span class="nav-icon">▥</span>
+                My Journey
+            </a>
+        </nav>
+
+        <p class="nav-label resources-label">LAINNYA</p>
+
+        <nav class="nav-menu">
+            <a class="nav-link" href="articles.html">
+                <span class="nav-icon">✧</span>
+                Artikel & Tips
+            </a>
+
+            <a class="nav-link" href="counseling.html">
+                <span class="nav-icon">☏</span>
+                Layanan Konseling
+            </a>
+
+            <a class="nav-link" href="settings.html">
+                <span class="nav-icon">⚙</span>
+                Pengaturan
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="support-card">
+                <div class="support-icon">✦</div>
+                <strong>Butuh teman cerita?</strong>
+                <p>Kamu ga harus menghadapi semua ini sendirian.</p>
+                <a href="counseling.html">
+                    Temukan bantuan <span>↗</span>
+                </a>
+            </div>
+
+            <div class="profile">
+                <a href="profile.html" class="profile-link">
+                    <div class="avatar" id="sidebarAvatar">U</div>
+
+                    <div class="profile-info">
+                        <strong id="sidebarName">Pengguna</strong>
+                        <span>Mahasiswa</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content profile-page">
+
+        <section class="profile-heading">
+            <div>
+                <p class="section-label">PERSONAL INFORMATION</p>
+                <h2>Profil kamu</h2>
+                <p>Kelola informasi dasar yang digunakan di MindMate.</p>
+            </div>
+        </section>
+
+        <section class="profile-card">
+            <div class="profile-identity">
+                <div class="profile-avatar" id="profileAvatar">U</div>
+
+                <div>
+                    <h3 id="profileDisplayName">Pengguna</h3>
+                    <p>Mahasiswa</p>
+                </div>
+            </div>
+
+            <form id="profileForm">
+                <div class="form-field">
+                    <label for="profileName">Nama panggilan</label>
+                    <input
+                        type="text"
+                        id="profileName"
+                        name="profileName"
+                        maxlength="40"
+                        placeholder="Masukkan nama panggilan"
+                        required
+                    >
+                    <small>Nama ini akan digunakan untuk sapaan di dashboard.</small>
+                </div>
+
+                <div class="form-field">
+                    <label for="profileEmail">Email <span>(opsional)</span></label>
+                    <input
+                        type="email"
+                        id="profileEmail"
+                        name="profileEmail"
+                        placeholder="nama@email.com"
+                    >
+                </div>
+
+                <div class="profile-actions">
+                    <button type="submit" class="save-profile-btn">
+                        Simpan perubahan
+                    </button>
+                    <p id="profileMessage" role="status"></p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>

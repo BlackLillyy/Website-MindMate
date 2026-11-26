@@ -90,18 +90,17 @@
                 </a>
             </div>
 
-            <div class="profile">
-
+        <div class="profile">
+            <a href="pages/profile.html" class="profile-link">
                 <div class="avatar">AN</div>
 
                 <div class="profile-info">
-                    <strong>Alhayu</strong>
+                    <strong id="sidebarProfileName">Alhayu</strong>
                     <span>Mahasiswa</span>
                 </div>
+            </a>
 
-                <button class="more-btn">···</button>
-
-            </div>
+        </div>
         </div>
     </aside>
 
@@ -110,7 +109,7 @@
         <header class="topbar">
 
             <div>
-                <p class="eyebrow">SENIN, 9 NOVEMBER 2026</p>
+                <p class="eyebrow" id="dashboardDate"></p>
                 <h1>Dashboard</h1>
             </div>
 
@@ -120,12 +119,6 @@
                     ♧
                     <i></i>
                 </button>
-
-                <div class="topbar-user">
-                    <div class="avatar small">AN</div>
-                    <span>Alhayu</span>
-                    <span class="chevron">⌄</span>
-                </div>
 
             </div>  
         </header>
@@ -138,7 +131,10 @@
                     YOUR SAFE SPACE, YOUR PACE
                 </p>
 
-                <h2>Hai, Alhayu! <span>✿</span></h2>
+                <h2>
+                    <span id="welcomeGreeting">Hai!</span>
+                    <span>❀</span>
+                </h2>
 
                 <p class="welcome-copy">
                     Apa pun yang sedang kamu rasakan, nggak apa-apa
@@ -159,6 +155,34 @@
             </div>
 
         </section>
+
+<!-- POPUP NAMA PENGGUNA -->
+<div class="name-modal" id="nameModal" hidden>
+    <div class="name-modal-card" role="dialog" aria-modal="true" aria-labelledby="nameModalTitle">
+        <p class="name-modal-label">WELCOME TO MINDMATE</p>
+
+        <h2 id="nameModalTitle">Sebelum mulai, siapa nama kamu?</h2>
+
+        <p class="name-modal-description">
+            Kamu bisa menggunakan nama panggilan atau nama samaran.
+        </p>
+
+        <form id="nameForm">
+            <label for="userNameInput">Nama panggilan</label>
+
+            <input
+                type="text"
+                id="userNameInput"
+                placeholder="Masukkan nama kamu"
+                maxlength="40"
+                autocomplete="given-name"
+                required
+            >
+
+            <button type="submit">Mulai perjalanan →</button>
+        </form>
+    </div>
+</div>
 
 
         <section class="section-heading">

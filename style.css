@@ -232,6 +232,20 @@ button {
     font-size: 20px;
 }
 
+.profile-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+.profile-link:hover .profile-info strong {
+    color: #8E7BD4;
+}
+
 /* MAIN CONTENT */
 
 .main-content {
@@ -336,7 +350,7 @@ h1 {
 }
 
 .welcome-row h2 span {
-    color: #d49b91;
+    color: #9768d2;
 }
 
 .welcome-copy {
@@ -421,6 +435,125 @@ h1 {
     right: 119px;
     transform: rotate(14deg);
     height: 70px;
+}
+
+/* ==============================
+   POPUP NAMA PENGGUNA
+============================== */
+
+.name-modal[hidden] {
+    display: none;
+}
+
+.name-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(20, 18, 31, 0.65);
+}
+
+.name-modal-card {
+    width: 100%;
+    max-width: 440px;
+    padding: 32px;
+    border: 1px solid #EEEAF5;
+    border-radius: 24px;
+    background: #FFFFFF;
+    color: #29263B;
+    box-shadow: 0 20px 60px rgba(20, 18, 31, 0.2);
+}
+
+.name-modal-label {
+    margin: 0 0 12px;
+    color: #8E7BD4;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.name-modal-card h2 {
+    margin: 0 0 10px;
+    color: #29263B;
+    font-size: 24px;
+    line-height: 1.35;
+}
+
+.name-modal-description {
+    margin: 0 0 24px;
+    color: #858197;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.name-modal-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name-modal-card label {
+    color: #514B68;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.name-modal-card input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #DDD7EB;
+    border-radius: 12px;
+    background: #FAF9FC;
+    color: #29263B;
+    font: inherit;
+}
+
+.name-modal-card input:focus {
+    outline: 2px solid #B8A8F5;
+    border-color: #8E7BD4;
+}
+
+.name-modal-card button {
+    margin-top: 8px;
+    padding: 13px 16px;
+    border: none;
+    border-radius: 12px;
+    background: #8E7BD4;
+    color: #FFFFFF;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.name-modal-card button:hover {
+    background: #7561BC;
+}
+
+/* Dark Mode */
+body.dark-mode .name-modal-card {
+    border-color: #373348;
+    background: #242232;
+    color: #F4F1FA;
+}
+
+body.dark-mode .name-modal-card h2 {
+    color: #F4F1FA;
+}
+
+body.dark-mode .name-modal-description,
+body.dark-mode .name-modal-card label {
+    color: #B9B3CA;
+}
+
+body.dark-mode .name-modal-card input {
+    border-color: #484359;
+    background: #302D40;
+    color: #F4F1FA;
 }
 
 /* SECTION HEADING */

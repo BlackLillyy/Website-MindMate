@@ -42,11 +42,15 @@ Halaman informasi yang menyediakan artikel seputar kesehatan mental, kehidupan a
 ### 9. Counseling Service
 Halaman informasi layanan konseling yang dilengkapi formulir permintaan layanan sebagai bagian dari prototipe.
 
+### 10. Profile
+Fitur untuk melihat dan memperbarui informasi profil pengguna, seperti nama dan email.
+
+### 11. Settings
+Fitur pengaturan preferensi pengguna, termasuk pilihan tampilan dark mode.
+
 ---
 
 ## 🛠️ Tech Stack
-
-Teknologi yang digunakan dalam pengembangan MindMate:
 
 | Technology | Usage |
 |---|---|
@@ -55,7 +59,7 @@ Teknologi yang digunakan dalam pengembangan MindMate:
 | JavaScript | Interaksi dan pengelolaan data |
 | Bootstrap | Framework pendukung antarmuka |
 | Chart.js | Visualisasi data |
-| Local Storage | Penyimpanan data sementara pada browser |
+| Local Storage | Penyimpanan data pada browser |
 
 ---
 
@@ -72,7 +76,9 @@ MindMate/
 │   ├── mental-health-journey.css
 │   ├── early-warning.css
 │   ├── articles.css
-│   └── counseling.css
+│   ├── counseling.css
+│   ├── settings.css
+│   └── profile.css
 │
 ├── js/
 │   ├── assessment.js
@@ -82,26 +88,38 @@ MindMate/
 │   ├── mental-health-journey.js
 │   ├── early-warning.js
 │   ├── articles.js
-│   └── counseling.js
+│   ├── counseling.js
+│   ├── settings.js
+│   └── profile.js
 │
 ├── pages/
 │   ├── assessment.html
 │   ├── mood-tracker.html
 │   ├── workload.html
 │   ├── stress-radar.html
-│   ├── mental-health-journey.html
+│   ├── journey.html
 │   ├── early-warning.html
 │   ├── articles.html
-│   └── counseling.html
+│   ├── counseling.html
+│   ├── settings.html
+│   └── profile.html
 │
 ├── index.html
 ├── style.css
+├── script.js
 └── README.md
 ```
+
+*Catatan: sesuaikan nama file pada struktur di atas jika nama atau lokasi file di repository berbeda.*
 
 ---
 
 ## 🚀 Getting Started
+
+1. Clone atau unduh repository MindMate.
+2. Buka folder proyek menggunakan Visual Studio Code.
+3. Jalankan file `index.html` menggunakan ekstensi **Live Server**.
+4. Aplikasi akan terbuka di browser.
 
 ---
 
@@ -113,8 +131,10 @@ Data yang disimpan meliputi:
 - Mood history.
 - Academic tasks.
 - Counseling requests.
+- Informasi profil pengguna.
+- Preferensi pengguna, termasuk pengaturan tampilan.
 
-Data tersebut tersimpan secara lokal pada browser yang digunakan. Belum terdapat integrasi database maupun sinkronisasi antarperangkat.
+Data tersimpan secara lokal pada browser yang digunakan. Data tidak otomatis tersinkronisasi antarperangkat atau antarbrowser.
 
 ---
 
@@ -128,6 +148,7 @@ MindMate masih berada dalam tahap pengembangan prototipe. Beberapa keterbatasann
 - Formulir konseling belum terhubung dengan penyedia layanan konseling.
 - Indikator Stress Radar dan Early Warning menggunakan aturan sederhana, bukan instrumen pengukuran klinis.
 - Hasil Self-Assessment tidak dimaksudkan untuk memberikan diagnosis psikologis.
+- Pengaturan preferensi dan profil masih bersifat lokal pada browser.
 
 ---
 
@@ -138,7 +159,7 @@ Rencana pengembangan MindMate selanjutnya meliputi:
 - Implementasi sistem registrasi dan login.
 - Integrasi database menggunakan MySQL.
 - Pengembangan backend menggunakan PHP.
-- Pengelolaan profil dan pengaturan pengguna.
+- Penyempurnaan pengelolaan profil dan preferensi pengguna.
 - Pengembangan admin dashboard.
 - Integrasi layanan konseling.
 - Peningkatan keamanan dan privasi data pengguna.
