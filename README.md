@@ -110,8 +110,6 @@ MindMate/
 └── README.md
 ```
 
-*Catatan: sesuaikan nama file pada struktur di atas jika nama atau lokasi file di repository berbeda.*
-
 ---
 
 ## 🚀 Getting Started
